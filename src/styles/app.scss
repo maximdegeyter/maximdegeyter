@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'SourceSerifPro';
+  src: url('/fonts/SourceSerifPro-Black.ttf');
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+main {
+  width: 75rem;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'SourceSerifPro', serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #404040;
+}
+
+a {
+  color: #ff6543;
+  font-family: 'SourceSerifPro', serif;
+  text-decoration: none;
+  border-bottom: solid 1px #ff6543;
+}
