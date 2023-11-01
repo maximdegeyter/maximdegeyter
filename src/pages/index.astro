@@ -38,22 +38,41 @@ const uniqueYears = experienceList.reduce((years, item) => {
             <a href="/">Maxim</a>
           </li>
           <li>
-            <a href="/about">About me</a>
+            <a href="/about">🙋‍♂️ About me</a>
+          </li>
+          <li>
+            <a href="/lists">📚 Lists</a>
+          </li>
+          <li>
+            <a href="/contact">📬 Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="px-20 flex justify-evenly items-center hero">
-        <div class="w-1/2">
-          <div class="flex flex-col-reverse gap-y-1">
-            <h1 class="font-primary text-6xl mb-8">I'm Maxim</h1>
-            <h2 class="font-mono text-violet-500 font-semibold">hello world</h2>
+      <section class="px-40 hero flex flex-col justify-around align-center">
+        <div class="flex justify-between items-center">
+          <div class="w-3/5">
+            <div class="flex flex-col-reverse gap-y-1">
+              <h1 class="font-primary text-6xl mb-8">I'm Maxim</h1>
+              <h2 class="font-mono text-violet-500 font-semibold">hello world</h2>
+            </div>
+            <p class="font-mono leading-relaxed">Welcome to my personal spot on the internet! I'm a web developer with a passion for bringing concepts to life and constantly <strong>improving site interaction</strong> for users. In my work, I place a <strong>strong emphasis on performance and user experience</strong>, ensuring that everyone can enjoy the content and features of the sites I build.</p>
+            <a href="/about" class="mt-4 inline-block text-violet-500 underline underline-offset-8 font-mono hover:no-underline">Get to know me</a>
           </div>
-          <p class="font-mono leading-relaxed">Welcome to my personal spot on the internet! I'm a web developer with a passion for bringing concepts to life and constantly <strong>improving site interaction</strong> for users. In my work, I place a <strong>strong emphasis on perfomance and user experience</strong>, ensuring that everyone can enjoy the content and features of the sites I build.</p>
-          <a href="/about" class="mt-4 inline-block text-violet-500 underline underline-offset-8 font-mono hover:no-underline">Get to know me</a>
+          <img src="/me.png" width="300" height="300" class="h-fit transition-all hover:rotate-45"/>
         </div>
-        <img src="/me.png" width="300" height="300" class="h-fit transition-all hover:rotate-45"/>
+        <ul class="flex justify-center gap-8">
+          <li class="p-2 rounded-lg border border-transparent hover:bg-violet-50 hover:border-violet-200">
+            <a href="https://github.com/maximdegeyter"><img src="/github-logo.svg" width="24" height="24" alt="Github logo"></a>
+          </li>
+          <li class="p-2 rounded-lg border border-transparent hover:bg-violet-50 hover:border-violet-200">
+            <a href="https://www.linkedin.com/in/maximdegeyter/"><img src="/linkedin-logo.svg" width="24" height="24" alt="LinkedIn logo"></a>
+          </li>
+          <li class="p-2 rounded-lg border border-transparent hover:bg-violet-50 hover:border-violet-200">
+            <a href="https://twitter.com/maximdegeyter"><img src="/x-logo.svg" width="24" height="24" alt="X logo"></a>
+          </li>
+        </ul>
       </section>
       <section class="px-20 py-10 bg-violet-50 border-y border-violet-200">
         <h2 class="text-violet-500 font-primary text-2xl mb-8">Some skills I've acquired over the years</h2>
@@ -72,18 +91,20 @@ const uniqueYears = experienceList.reduce((years, item) => {
           </li>
         </ul>
       </section>
-      <section class="px-20 py-10">
+      <section class="mx-20 py-10 mb-10 border-b ">
         <h2 class="font-primary text-2xl mb-8">Education & Experience</h2>
         {
           uniqueYears.map((year) => (
             <div class="mb-8">
-              <h3 class="font-mono text-violet-500 font-semibold">{year}</h3>
-              <ul class="list-none list-inside">
+              <h3 class="font-mono text-violet-500 font-semibold mb-4">{year}</h3>
+              <ul class="list list-inside">
                 {
                   experienceList.filter((item) => item.year === year).map((item) => (
-                    <li class="font-mono">
-                      <h3>{item.title}</h3>
-                      <p>{item.body}</p>
+                    <li class="font-mono mb-8 ml-10 flex flex-row gap-4 items-center">
+                      <div class="border-l-2 border-violet-500 pl-2">
+                        <h3 class="font-semibold">{item.title}</h3>
+                        <p>{item.detail}</p>
+                      </div>
                     </li>
                   ))
                 }
@@ -92,6 +113,9 @@ const uniqueYears = experienceList.reduce((years, item) => {
           ))
         }
       </section>
+      <footer class="px-20 py-10 bg-violet-50 border-t border-violet-200">
+        hello world
+      </footer>
     </main>
   </body>
 </html>
