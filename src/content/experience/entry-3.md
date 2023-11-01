@@ -1,7 +1,5 @@
 ---
 year: 2020
-title: Started working at Craftzing 
-detail: Check it out
+title: Graduated from Devine 🎓
+detail: Successfully finished my Bachelor's degree in Digital design & development at Howest.
 ---
-
-Joined [Craftzing](https://www.craftzing.com/) as a front-end developer

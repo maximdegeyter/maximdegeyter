@@ -1,7 +1,5 @@
 ---
 year: 2020
-title: Hello World
-detail: Something exciting
+title: My first job 🚀
+detail: Started working as a web developer for Capgemini.
 ---
-
-[Duck Duck Go](https://duckduckgo.com)
