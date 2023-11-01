@@ -1,0 +1,41 @@
+---
+const { title } = Astro.props
+---
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Maxim De Geyter - {title}</title>
+    <link rel="stylesheet" href="../../src/styles/main.css">
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="border-b px-4 lg:px-20 sticky top-0 backdrop-blur">
+      <nav>
+        <ul class="h-16 flex flex-row gap-x-8 items-center">
+          <li class="grow">
+            <a href="/">Maxim</a>
+          </li>
+          <li>
+            <a href="/about">🙋‍♂️ About me</a>
+          </li>
+          <li>
+            <a href="/lists">📚 Lists</a>
+          </li>
+          <li>
+            <a href="/contact">📬 Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <slot />
+    </main>
+    <footer class="px-4 md:px-10 lg:px-20 py-10 bg-violet-50 border-t border-violet-200 shrink-0">
+      <p class="text-center font-mono">Built with <a class="text-violet-500 underline underline-offset-8 hover:no-underline" href="https://astro.build/">Astro</a> 🚀 by Maxim.</p>
+    </footer>
+  </body>
+</html>
