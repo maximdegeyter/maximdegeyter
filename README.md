@@ -4,8 +4,8 @@ Welcome to my personal Github profile! I'm a web developer with a passion for br
 My personal website: https://maximdegeyter.dev/
 
 ## ➡️ Follow me
-[X](https://twitter.com/maximdegeyter)
-[LinkedIn](https://www.linkedin.com/in/maximdegeyter/)
+- [X](https://twitter.com/maximdegeyter)
+- [LinkedIn](https://www.linkedin.com/in/maximdegeyter/)
 
 ---
 
