@@ -6,3 +6,7 @@
 .hero {
   height: calc(100vh - 4rem);
 }
+
+* {
+  color: #3C3C3C;
+}
