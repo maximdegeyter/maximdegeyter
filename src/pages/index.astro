@@ -24,16 +24,18 @@ const uniqueYears = experienceList.reduce((years, item) => {
 
 <SiteLayout title="Home Page">
   <section class="max-w-4xl mx-auto my-48 px-4 md:px-10 lg:px-20">
-    <div class="flex flex-col-reverse lg:flex-row justify-between items-center mb-24">
+    <div class="flex flex-col-reverse lg:flex-row justify-between items-center">
       <div class="w-full lg:w-3/5 text-center lg:text-left">
         <div class="flex flex-col-reverse gap-y-1">
           <h1 class="font-primary text-4xl md:text-6xl mb-6 md:mb-8">I'm Maxim</h1>
           <h2 class="font-mono text-violet-500 font-semibold">hello world</h2>
         </div>
-        <p class="font-mono leading-relaxed">Welcome to my personal spot on the internet! I'm a web developer with a passion for bringing concepts to life and constantly <strong>improving site interaction</strong> for users. In my work, I place a <strong>strong emphasis on performance and user experience</strong>, ensuring that everyone can enjoy the content and features of the sites I build.</p>
-        <a href="/about" class="mt-4 inline-block text-violet-500 underline underline-offset-8 font-mono hover:no-underline">Get to know me</a>
       </div>
       <img src="/me.png" width="300" height="300" class="h-36 w-36 md:h-72 md:w-72 transition-all hover:rotate-45"/>
+    </div>
+    <div class="mb-24">
+      <p class="font-mono leading-relaxed">Welcome to my personal spot on the internet! I'm a web developer with a passion for bringing concepts to life and constantly <strong>improving site interaction</strong> for users. In my work, I place a <strong>strong emphasis on performance and user experience</strong>, ensuring that everyone can enjoy the content and features of the sites I build.</p>
+      <a href="/about" class="mt-4 inline-block text-violet-500 underline underline-offset-8 font-mono hover:no-underline">Get to know me</a>
     </div>
     <ul class="flex justify-center gap-8">
       <li class="p-2 rounded-lg border border-transparent hover:bg-violet-50 hover:border-violet-200">
